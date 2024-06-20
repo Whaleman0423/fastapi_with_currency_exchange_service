@@ -100,14 +100,14 @@ pytest
 #### 前端網頁測試
 在啟動 fastapi 系統的前提下，訪問 http://localhost:8000/  
 開啟前端網頁後，可以在「Amount」的輸入框輸入 數值，並選擇 Source 與 Target 的幣值，點選 Convert 進行轉換，測試情境參考以下:  
-1. 正常轉換
-a. Amount=1525、source=USD、target=JPY  
-b. Amount=1,525、source=USD、target=JPY
-c. Amount=1,525.00、source=USD、target=JPY
+1. 正常轉換  
+a. Amount=1525、source=USD、target=JPY    
+b. Amount=1,525、source=USD、target=JPY  
+c. Amount=1,525.00、source=USD、target=JPY  
 d. Amount=1,525.000、source=USD、target=JPY
-2. 輸入值異常
+2. 輸入值異常  
 a. Amount=1ax525、source=USD、target=JPY => Value Error, Invalid amount format
-3. 未輸入
+3. 未輸入  
 a. Amount=、source=USD、target=JPY => Value Error, Invalid amount format
 
 #### 觀察 OpenAPI Spec Docs
