@@ -1,0 +1,12 @@
+services:
+  my-python-app:
+    container_name: my-fastapi-app
+    build:
+      context: .
+      dockerfile: Dockerfile-dev
+    ports:
+      - "8000:8000"
+    stdin_open: true
+    tty: true
+    volumes:
+      - .:/app
